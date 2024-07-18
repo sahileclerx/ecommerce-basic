@@ -28,8 +28,8 @@ const NavBar = () => {
                 <li><Link to="cart" className="flex gap-1"><HiOutlineShoppingCart className="inline text-2xl" /> Cart <span className="bg-red-500 rounded-full w-[14px] h-[14px] text-white flex items-center justify-center text-[10px]">2</span></Link></li>
             </ul>
         </nav>
-        <div className={`flex p-3 bg-gray-50 items-center fixed transition-all duration-500 w-full left-[0px] z-[5] ${search ? 'top-[0px]' : 'top-[50px]'}`}><input type="text" className="w-full bg-transparent p-2 focus:outline-none" placeholder="Search Products" ref={searchRef} value={searchVal} onChange={(e) => setSearchVal(e.target.value) } /> <p className="shrink-0 text-gray-400"><HiOutlineMagnifyingGlass className="text-2xl" /></p></div>
-        <div className='mt-[80px]'></div>
+        <div className={`flex p-3 items-center fixed transition-all duration-500 w-full left-[0px] z-[5] ${search ? 'top-[0px] bg-gray-100' : 'top-[50px] bg-gray-50'}`}><input type="text" className="w-full bg-transparent p-2 focus:outline-none" placeholder="Search Products" ref={searchRef} value={searchVal} onChange={(e) => setSearchVal(e.target.value) } /> <p className="shrink-0 text-gray-400"><HiOutlineMagnifyingGlass className="text-2xl" /></p></div>
+        <div className='mt-[60px]'></div>
         </>
     )
 }

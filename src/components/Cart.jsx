@@ -1,7 +1,8 @@
+import Hero from "./Hero";
 const Cart = () => {
     return (
         <>
-            <h1>Cart</h1>
+            <Hero size={50} text="Cart" />
         </>
     )
 }

@@ -1,7 +1,14 @@
+import Hero from "./Hero";
+import { useParams } from "react-router-dom";
+import useStrReplace from "../hooks/useStrReplace";
+
 const Shop = () => {
+    console.log(useParams())
+    const { type, term } = useParams();
+    
     return (
         <>
-            <h1>Shop</h1>
+            <Hero size={50} extraClasses="capitalize" text={type==`category` ? useStrReplace(term, '-', ' ') : 'Shop'} />
         </>
     )
 }
