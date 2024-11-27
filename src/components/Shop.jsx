@@ -6,6 +6,7 @@ import { HiOutlineStar, HiOutlinePlus } from "react-icons/hi2";
 
 const Shop = () => {
     // console.log(useParams())
+    // Test Comment
     const { type, term } = useParams();
 
     let url = type === 'category' ? `https://fakestoreapi.com/products/category/${useStrReplace(term, '-', ' ')}` : 'https://fakestoreapi.com/products';
